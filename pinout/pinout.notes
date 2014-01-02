@@ -1,0 +1,55 @@
+PYBv3 pinout
+============
+
+GND is ground
+3V3 is regulated +3.3V output
+VIN is +5V out from USB power, or power in 3.6V - 10V
+
+left side:
+3V3
+GND
+B13     SPI2 SCK    CAN2 TX                             TIM1 CH1N                           OTG HS VBUS
+B14     SPI2 MISO                                       TIM1 CH2N, TIM8 CH2N, TIM12 CH1     OTG HS DM
+B15     SPI2 MOSI                                       TIM1 CH3N, TIM8 CH3N, TIM12 CH2     OTG HS DP
+C6                  USART6 TX                           TIM3 CH1, TIM8 CH1
+C7                  USART6 RX                           TIM3 CH2, TIM8 CH2
+A13                                                                                         JTMS, SWDIO
+A14                                                                                         JTCK, SWCLK
+A15                                                     TIM2 CH1, TIM2 ETR                  JTDI
+B3                                                      TIM2 CH2                            JTDO
+B4                                                      TIM3 CH1                            NJTRST
+B6 MMA  I2C1 SCL    USART1 TX                           TIM4 CH1
+B7 MMA  I2C1 SDA    USART1 RX                           TIM4 CH2
+3V3
+
+right side:
+VIN
+GND
+B12                 CAN2 RX                             TIM1 BKIN                           OTG HS ID
+B11     I2C2 SDA    USART3 RX                           TIM2 CH4
+B10     I2C2 SCL    USART3 TX                           TIM2 CH3
+B1                                          ADC12_IN9   TIM1 CH3N, TIM3 CH4, TIM8 CH3N
+B0                                          ADC12_IN8   TIM1 CH2N, TIM3 CH3, TIM8 CH2N
+A7      SPI1 MOSI                           ADC12_IN7   TIM1 CH1N, TIM3 CH2, TIM8 CH1N, TIM14 CH1
+A6      SPI1 MISO                           ADC12_IN6   TIM1 BKIN, TIM3 CH1, TIM8 BKIN, TIM13 CH1
+A5 3v3  SPI1 SCK                DAC OUT2    ADC12_IN5   TIM2 CH1 ETR, TIM8 CH1N
+A4 3v3                          DAC OUT1    ADC12_IN4
+A3                  USART2 RX               ADC123_IN3  TIM2 CH4, TIM5 CH4, TIM9 CH2
+A2                  USART2 TX               ADC123_IN2  TIM2 CH3, TIM5 CH3, TIM9 CH1
+A1                  USART4 RX               ADC123_IN1  TIM2 CH2, TIM5 CH2
+A0                  USART4 TX               ADC123_IN0  TIM2 CH1 ETR, TIM5 CH1, TIM8 ETR
+
+bottom row, from left:
+BOOT0
+RST
+B8 MINT I2C1 SCL    CAN1 RX                             TIM4 CH3, TIM10 CH1
+B9      I2C1 SDA    CAN1 TX                             TIM4 CH4, TIM11 CH1
+C0                                          ADC123 IN10
+C1                                          ADC123 IN11
+C2                                          ADC123 IN12
+C3                                          ADC123 IN13
+GND x4
+VIN x4
+
+Note: When a pin is in ADC mode (and DAC) it is only 3v3 tolerant.
+Otherwise, except where noted, all I/O pins are 5v tolerant.
