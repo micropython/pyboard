@@ -2,8 +2,11 @@ The Micro Python board
 ======================
 
 The Micro Python board (pyboard) is a small microcontroller board
-that runs Micro Python.  It is based on the STM32F405RGT6 MCU and
-includes USB, a micro SD card slot and an accelerometer.
+that runs Micro Python (Micro Python is a lean and fast 
+implementation of the Python 3 programming language that is 
+optimised to run on a microcontroller).  It is based on the 
+STM32F405RGT6 MCU and includes USB, a micro SD card slot and an 
+accelerometer.
 
 This repository contains the schematic, gerbers, EAGLE files, BOM
 and assembly guide for PYBv3 (the 3rd revision of the board).
