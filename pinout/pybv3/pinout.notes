@@ -25,7 +25,7 @@ B7 MMA  I2C1 SDA    USART1 RX                           TIM4 CH2
 right side:
 VIN
 GND
-B12                 CAN2 RX                             TIM1 BKIN                           OTG HS ID
+B12     SPI2 NSS    CAN2 RX                             TIM1 BKIN                           OTG HS ID
 B11     I2C2 SDA    USART3 RX                           TIM2 CH4
 B10     I2C2 SCL    USART3 TX                           TIM2 CH3
 B1                                          ADC12_IN9   TIM1 CH3N, TIM3 CH4, TIM8 CH3N
